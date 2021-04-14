@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  background-color: rgb(37, 37, 37);
+  color: rgb(253, 215, 205);
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 750px;
+  border: 2px solid rgb(255, 115, 0);
+  border-radius: 8px;
+
+  background-image: linear-gradient(
+    to right top,
+    #be5b00,
+    #d4352f,
+    #dc005a,
+    #cd008d,
+    #9e24c0
+  );
+  background-size: cover;
+
+  /*second theme*/
+  /*
+  background: rgb(249, 117, 9);
+  background: radial-gradient(
+    circle,
+    rgba(249, 117, 9, 1) 0%,
+    rgba(143, 56, 255, 1) 100%
+  );
+  */
+  min-height: 80vh;
+  display: flex;
+  padding: 20px;
+  overflow: auto;
+}
+
+.tracker {
+  float: left;
+  width: 60%;
+}
+
+.stats {
+  margin-left: 50px;
+  float: right;
+  width: 30%;
+}
+
+ul {
+  list-style: none;
+}
+
+.expense-item {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 2px solid rgba(179, 47, 255, 0.753);
+  border-radius: 8px;
+  background-color: rgb(255, 127, 206);
+  font-size: 25px;
+  color: black;
+  align-items: center;
+  display: flex;
+  transition: all 1s ease;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  font-size: 18px;
+  background-color: transparent;
+  color: rgb(245, 243, 243);
+}
+
+form input::placeholder {
+  font-size: 17px;
+  color: rgb(241, 239, 239);
+}
+
+.form-btn {
+  padding: 8px;
+  border-radius: 7px;
+  background-color: transparent;
+  font-size: 16px;
+  color: rgb(253, 215, 205);
+  outline: none;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.delete-btn i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.balance {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.income {
+  font-size: 25px;
+  padding-bottom: 8px;
+  color: rgba(47, 255, 134, 0.911);
+}
+
+.expense {
+  font-size: 25px;
+  color: rgb(235, 235, 235);
+}
+
+@media (max-width: 760px) {
+  .container {
+    margin: 20px auto;
+    width: 450px;
+  }
+
+  .tracker {
+    float: left;
+    width: 60%;
+  }
+
+  .stats {
+    margin-left: 50px;
+    float: right;
+    width: 30%;
+  }
+}
